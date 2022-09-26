@@ -1,12 +1,13 @@
 <script setup lang="ts">
 import CanvasRender from './components/CanvasRender.vue'
-import CanvasBgVue from './components/CanvasBg.vue';
+import CanvasBoard from './components/CanvasBoard.vue';
 
 </script>
 
 <template>
     <!-- <CanvasRender></CanvasRender> -->
-    <CanvasBgVue></CanvasBgVue>
+    <CanvasBoard>
+    </CanvasBoard>
 </template>
 
 <style scoped>
