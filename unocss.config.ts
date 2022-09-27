@@ -6,6 +6,11 @@ import {
   presetUno,
   presetWebFonts,
 } from "unocss";
+import liuyue from "./src/icons/output/test.json";
+
+import("./src/icons/output/test.json").then((i) => {
+  console.log("i.default", i);
+});
 
 export default defineConfig({
   presets: [
@@ -14,6 +19,15 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       warn: true,
+      collections: {
+        custom: {
+          circle:
+            '<svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="50"></circle></svg>',
+          /* ... */
+        },
+        liuyue: () => import("./src/icons/output/test.json"),
+        /* ... */
+      },
     }),
     presetWebFonts({
       fonts: {

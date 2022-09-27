@@ -11,6 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@iconify/tools": "^2.1.0",
     "@vueuse/core": "^9.2.0",
     "fabric": "^5.2.4",
     "vue": "^3.2.37"
